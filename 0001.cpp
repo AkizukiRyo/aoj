@@ -1,0 +1,26 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+	int n[10];
+	for (int i = 0; i < 10; i++)
+	{
+		cin >> n[i];
+	}
+	//降順ソート
+	for (int i = 0; i < 10; i++)
+	{
+		for (int j = i + 1; j < 10; j++)
+		{
+			if (n[i] < n[j]) swap(n[i], n[j]);
+		}
+	}
+	//大きい3つを出力
+	cout << n[0] << endl;
+	cout << n[1] << endl;
+	cout << n[2] << endl;
+
+	return 0;
+}
