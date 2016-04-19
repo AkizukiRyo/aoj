@@ -8,7 +8,6 @@ int main()
 	while (cin >> a >> b)
 	{
 		if (a < b) swap(a, b);
-		//Å‘åŒö–ñ”
 		for (int i = 1; i <= a; i++)
 		{
 			if (a % i == 0 && b % (a / i) == 0)
@@ -17,7 +16,6 @@ int main()
 				break;
 			}
 		}
-		//Å¬Œö”{”
 		for (int i = 1; i <= b; i++)
 		{
 			if ((a * i) % b == 0)
